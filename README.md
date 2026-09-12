@@ -1,5 +1,8 @@
 # RVTools
 
+Download latest version from Releases:       
+https://github.com/rvtlix/RVTools/releases/tag/4.7.1
+
 ## Introduction
 
 RVTools is a Windows-based utility for collecting and analyzing configuration and operational information from VMware vSphere environments. It connects to a vCenter Server or an individual ESXi host and retrieves inventory data through the VMware management interface. The collected information is organized into specialized tabular views covering virtual machines, CPU and memory allocation, virtual disks, guest partitions, networking, snapshots, VMware Tools, resource pools, clusters, hosts, storage adapters, virtual switches, datastores, multipathing, and health conditions.
@@ -56,4 +59,4 @@ A practical scheduled workflow is to authenticate with pass-through credentials,
 
 Filtering can also be saved so that recurring interactive sessions start with the required selection criteria. Automatic refresh can be configured when the environment needs continuously updated information during an investigation.
 
-For troubleshooting purposes, RVTools supports debug logging through its logging configuration. Since debug logging is disabled by default and may introduce additional performance overhead, it should only be enabled when detailed diagnostic data is needed. In large environments, administrators should also carefully evaluate optional display fields and avoid enabling resource-intensive information unnecessarily, especially folder and vApp details, as these can significantly increase data collection times.
+RVTools can generate diagnostic logs by enabling debug logging in the logging settings. This feature is disabled by default because it can affect performance, so it is recommended to activate it only during troubleshooting activities that require additional insight. For large-scale environments, administrators should limit the use of costly display options, particularly folder and vApp-related fields, as collecting this information may extend the overall collection process.
