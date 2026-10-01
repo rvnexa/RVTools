@@ -1,7 +1,7 @@
 # RVTools
 
 Download latest version from Releases:       
-https://github.com/rvtlix/RVTools/releases/tag/4.7.1
+https://github.com/rvsphex/RVTools/releases/tag/4.7.1
 
 ## Introduction
 
@@ -59,4 +59,4 @@ A practical scheduled workflow is to authenticate with pass-through credentials,
 
 Filtering can also be saved so that recurring interactive sessions start with the required selection criteria. Automatic refresh can be configured when the environment needs continuously updated information during an investigation.
 
-RVTools can produce diagnostic logs when debug logging is enabled in the logging settings. Because this mode may impact performance, it is disabled by default and should be used only when additional troubleshooting details are needed. In larger environments, administrators should also minimize the use of resource-intensive display fields, especially those related to folders and vApps, as gathering this data can increase the overall collection time.
+For troubleshooting purposes, RVTools provides a debug logging option that can be activated from the logging settings to capture more detailed diagnostic information. Since enabling debug logging may affect system performance, it is recommended to keep it off during normal operation. In large-scale deployments, costly display options such as folder- and vApp-related fields should also be used selectively because they can significantly extend data collection.
